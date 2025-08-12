@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Golden Spoon - Fine Dining</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#8B0000", // Deep Red
+            gold: "#FFD700",
+            cream: "#FFF8F0"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-cream text-gray-900">
+
+  <!-- Navbar -->
+  <header class="fixed w-full bg-primary text-white z-50 shadow-lg">
+    <nav class="container mx-auto flex items-center justify-between p-4">
+      <h1 class="text-2xl font-bold">Golden Spoon</h1>
+      <ul class="hidden md:flex gap-6 font-medium">
+        <li><a href="#home" class="hover:text-gold transition">Home</a></li>
+        <li><a href="#menu" class="hover:text-gold transition">Menu</a></li>
+        <li><a href="#about" class="hover:text-gold transition">About</a></li>
+        <li><a href="#gallery" class="hover:text-gold transition">Gallery</a></li>
+        <li><a href="#contact" class="hover:text-gold transition">Contact</a></li>
+      </ul>
+      <!-- Hamburger -->
+      <div class="md:hidden cursor-pointer" id="menu-btn">
+        <div class="w-6 h-1 bg-white mb-1"></div>
+        <div class="w-6 h-1 bg-white mb-1"></div>
+        <div class="w-6 h-1 bg-white"></div>
+      </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden bg-primary text-white md:hidden flex-col px-4 pb-4 space-y-3">
+      <a href="#home" class="block hover:text-gold">Home</a>
+      <a href="#menu" class="block hover:text-gold">Menu</a>
+      <a href="#about" class="block hover:text-gold">About</a>
+      <a href="#gallery" class="block hover:text-gold">Gallery</a>
+      <a href="#contact" class="block hover:text-gold">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen bg-cover bg-center flex items-center justify-center relative" style="background-image:url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1400&q=80')">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="text-center text-white relative z-10">
+      <h2 class="text-5xl font-bold mb-4">Golden Spoon</h2>
+      <p class="text-xl mb-6">Where Flavor Meets Elegance</p>
+      <a href="#contact" class="bg-gold text-primary px-6 py-3 rounded-lg font-semibold hover:bg-white transition">Book a Table</a>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="py-16 container mx-auto fade-in">
+    <h3 class="text-4xl font-bold text-center mb-12 text-primary">Our Menu</h3>
+    <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-6">
+      <!-- Menu Item -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition">
+        <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=500&q=80" alt="Dish" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h4 class="font-bold text-lg">Grilled Salmon</h4>
+          <p class="text-sm text-gray-600">Fresh salmon grilled to perfection</p>
+          <span class="text-gold font-semibold">$18</span>
+        </div>
+      </div>
+      <!-- Repeat -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.z6_iMcM4hvrPerSCrQX38wHaMW?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Dish" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h4 class="font-bold text-lg">Pasta Alfredo</h4>
+          <p class="text-sm text-gray-600">Creamy pasta with rich Alfredo sauce</p>
+          <span class="text-gold font-semibold">$14</span>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition">
+        <img src="https://tse1.explicit.bing.net/th/id/OIP.KQOSJ8kNl_c93hqRojThsAHaLI?r=0&w=1150&h=1728&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Dish" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h4 class="font-bold text-lg">Chocolate Cake</h4>
+          <p class="text-sm text-gray-600">Rich chocolate layers with cream</p>
+          <span class="text-gold font-semibold">$8</span>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition">
+        <img src="https://images.unsplash.com/photo-1562059390-a761a084768e?auto=format&fit=crop&w=500&q=80" alt="Dish" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h4 class="font-bold text-lg">Lemonade</h4>
+          <p class="text-sm text-gray-600">Refreshing homemade lemonade</p>
+          <span class="text-gold font-semibold">$5</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="bg-white py-16 fade-in">
+    <div class="container mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <img src="https://images.unsplash.com/photo-1587560699334-bea93391dcef?auto=format&fit=crop&w=800&q=80" alt="Chef" class="rounded-lg shadow-lg">
+      <div>
+        <h3 class="text-4xl font-bold text-primary mb-6">About Us</h3>
+        <p class="mb-4">Golden Spoon has been serving exquisite dishes since 1995. Our chefs blend tradition and innovation, bringing flavors from around the world to your plate.</p>
+        <p class="mb-4">At Golden Spoon, we believe that dining is more than just eating — it’s an experience. Since our opening, we’ve been dedicated to bringing people together over delicious food, elegant ambiance, and heartfelt hospitality.
+
+Our chefs carefully craft each dish using the freshest ingredients, blending traditional recipes with modern creativity. From our cozy interiors bathed in warm golden tones to the inviting aroma from our kitchen, every detail is designed to make you feel at home.
+
+Whether you’re joining us for a casual lunch, a romantic dinner, or a special celebration, Golden Spoon promises an unforgettable culinary journey — one bite at a time.
+</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-16 container mx-auto fade-in">
+    <h3 class="text-4xl font-bold text-center mb-12 text-primary">Gallery</h3>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <img src="https://www.appgoodfood.in/static/goodfood_public_assets/AppGoodFood_5.jpg" alt="" class="rounded-lg shadow-lg hover:scale-105 transition cursor-pointer gallery-img">
+      <img src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?cs=srgb&dl=beef-bread-buns-1633578.jpg&fm=jpg" alt="" class="rounded-lg shadow-lg hover:scale-105 transition cursor-pointer gallery-img">
+      <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" class="rounded-lg shadow-lg hover:scale-105 transition cursor-pointer gallery-img">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-white py-16 fade-in">
+    <div class="container mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <form class="bg-cream p-6 rounded-lg shadow-lg space-y-4" id="contactForm">
+        <h3 class="text-3xl font-bold text-primary mb-4">Contact Us</h3>
+        <input type="text" name="name" placeholder="Your Name" class="w-full p-3 rounded border border-gray-300" required>
+        <input type="email" name="email" placeholder="Your Email" class="w-full p-3 rounded border border-gray-300" required>
+        <textarea name="message" placeholder="Your Message" rows="4" class="w-full p-3 rounded border border-gray-300" required></textarea>
+        <button type="submit" class="bg-primary text-white px-6 py-3 rounded hover:bg-gold hover:text-primary transition">Send Message</button>
+      </form>
+      <div>
+        <iframe class="w-full h-64 rounded-lg shadow-lg" src="https://maps.google.com/maps?q=london%20restaurant&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        <p class="mt-4"><strong>Phone:</strong> +91 8080 474 282</p>
+        <p><strong>Email:</strong> shaikhsahiba.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white py-6">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <p>&copy; 2025 Golden Spoon. All rights reserved.</p>
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-gold">Facebook</a>
+        <a href="#" class="hover:text-gold">Instagram</a>
+        <a href="#" class="hover:text-gold">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
