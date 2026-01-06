@@ -1,4 +1,4 @@
-# 🍽️ Restaurant Pro
+# 🍽️ Restaurant Pro 
 
 **Restaurant Pro** is a responsive and modern restaurant website built using **HTML, CSS, and JavaScript**.  
 This project is created for practice purposes to strengthen frontend development skills and UI design.
