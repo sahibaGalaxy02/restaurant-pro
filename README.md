@@ -17,7 +17,7 @@ This project is created for practice purposes to strengthen frontend development
 
 ## 🛠️ Tech Stack
 
-- **HTML5** – Structure  
+- **HTML5** –  for Structure
 - **CSS3** – Styling & layout  
 - **JavaScript** – Interactivity  
 
