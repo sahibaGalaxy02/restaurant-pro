@@ -5,7 +5,7 @@ This project is created for practice purposes to strengthen frontend development
 
 ---
 
-## 🚀 Features
+## 🚀 Feature here ..
 
 - Responsive restaurant landing page  
 - Clean and modern UI design  
