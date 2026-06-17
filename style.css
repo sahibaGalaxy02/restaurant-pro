@@ -7,7 +7,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ================= FADE ANIMATION ================= */
+/* FADE ANIMATION */
 
 .fade-in {
   opacity: 0;
@@ -20,7 +20,7 @@ body {
   transform: translateY(0);
 }
 
-/* ================= NAVBAR ================= */
+/* NAVBAR */
 
 header {
   backdrop-filter: blur(8px);
@@ -30,7 +30,7 @@ nav a {
   transition: color 0.3s ease;
 }
 
-/* ================= HERO SECTION ================= */
+/* HERO SECTION */
 
 #home h2 {
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
@@ -40,7 +40,7 @@ nav a {
   line-height: 1.7;
 }
 
-/* ================= MENU CARDS ================= */
+/* MENU CARDS */
 
 .menu-card {
   background: #ffffff;
@@ -66,7 +66,7 @@ nav a {
   transform: scale(1.08);
 }
 
-/* ================= ORDER BUTTON ================= */
+/* ORDER BUTTON */
 
 .order-btn {
   width: 100%;
@@ -87,7 +87,7 @@ nav a {
   transform: scale(1.03);
 }
 
-/* ================= ABOUT SECTION ================= */
+/* ABOUT SECTION */
 
 #about img {
   transition: transform 0.4s ease;
@@ -97,7 +97,7 @@ nav a {
   transform: scale(1.03);
 }
 
-/* ================= GALLERY ================= */
+/* GALLERY */
 
 .gallery-img {
   width: 100%;
@@ -114,7 +114,7 @@ nav a {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
 
-/* ================= CONTACT FORM ================= */
+/* CONTACT FORM */
 
 input,
 textarea {
@@ -126,13 +126,13 @@ textarea:focus {
   box-shadow: 0 0 12px rgba(139, 0, 0, 0.35);
 }
 
-/* ================= IFRAME MAP ================= */
+/* IFRAME MAP  */
 
 iframe {
   border: none;
 }
 
-/* ================= FOOTER ================= */
+/* FOOTER */
 
 footer a {
   transition: transform 0.3s ease;
@@ -142,7 +142,7 @@ footer a:hover {
   transform: translateY(-4px);
 }
 
-/* ================= RESPONSIVE ================= */
+/* RESPONSIVE */
 
 @media (max-width: 768px) {
   #home h2 {
