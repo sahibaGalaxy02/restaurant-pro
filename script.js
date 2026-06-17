@@ -7,7 +7,7 @@ menuBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
 });
 
-//  CLOSE MOBILE MENU AFTER LINK CLICK
+// CLOSE MOBILE MENU AFTER LINK CLICK
 
 const navLinks = document.querySelectorAll("#mobile-menu a");
 
@@ -41,7 +41,7 @@ fadeElements.forEach(element => {
     observer.observe(element);
 });
 
-//CONTACT FORM 
+// CONTACT FORM 
 
 const contactForm = document.getElementById("contactForm");
 
@@ -52,7 +52,7 @@ contactForm.addEventListener("submit", function (e) {
     this.reset();
 });
 
-//NAVBAR SHADOW ON SCROLL
+// NAVBAR SHADOW ON SCROLL
 
 const navbar = document.querySelector("header");
 
