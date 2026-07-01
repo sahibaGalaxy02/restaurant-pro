@@ -1,4 +1,4 @@
-// MOBILE MENU
+// MOBILE MENU HERE--
 
 const menuBtn = document.getElementById("menu-btn");
 const mobileMenu = document.getElementById("mobile-menu");
